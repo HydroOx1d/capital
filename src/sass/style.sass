@@ -1,3 +1,5 @@
+@import './fonts.sass'
+  
 body 
   font-family: SfProDisplayRegular, sans-serif!important
 
@@ -9,3 +11,54 @@ body
     font-weight: 400
     font-size: 22px
     line-height: 26px
+
+
+  
+.banner
+  &-content
+    flex: 1
+    width: 100%
+    background: #141414
+    display: flex
+    align-items: center
+    justify-content: center
+  &-title
+    font-style: normal
+    font-weight: 400
+    font-size: 64px
+    line-height: 76px
+  &-text
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #A2A2A2
+
+  &-img
+    object-fit: cover
+    &-wrap
+      flex: 1
+  &-btn-icon
+    border-radius: 0 !important
+
+
+.bankBills 
+  &-image
+    width: 100%
+    object-fit: cover
+
+    &-wrap
+      flex: 1
+    
+  &-content
+    flex: 1
+
+  &-item-text
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    max-width: 400px
+
+    @media (max-width: 500px) 
+      max-width: 200px
