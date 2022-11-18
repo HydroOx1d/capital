@@ -16,18 +16,28 @@ body
 
   
 .banner
+  position: relative
   &-content
     flex: 1
     width: 100%
     background: #141414
-    display: flex
-    align-items: center
-    justify-content: center
+  
+  &-info
+    @media (max-width: 991px)
+      max-width: 720px
+      margin: 0 auto
+    
+    // @media (min-width: 576px)
+    //   max-width: 540px
+    //   margin: 0 auto
+  
   &-title
     font-style: normal
     font-weight: 400
     font-size: 64px
     line-height: 76px
+    &-red
+      color: #FF4343
   &-text
     font-style: normal
     font-weight: 400
@@ -38,12 +48,30 @@ body
 
   &-img
     object-fit: cover
+    height: 100%
     &-wrap
       flex: 1
+
+      @media (max-width: 991px)
+        height: 500px
+
   &-btn-icon
     border-radius: 0 !important
   &-btn
     background: #FF4343
+  
+  &-controllers
+
+    &-btn
+      background: none
+      outline: none
+
+    &-text
+      font-style: normal
+      font-weight: 400
+      font-size: 16px
+      line-height: 19px
+      color: #FFFFFF
 
 
 .bankBills 
@@ -197,3 +225,23 @@ body
     th 
       color: #A2A2A2
   
+.financing
+
+  &-list
+    list-style: none
+    padding: 0
+
+    @media (max-width: 1200px)
+      flex-wrap: wrap 
+
+    &-item
+      width: 400px
+      height: 160px
+      background: #FBFBFB
+      padding: 20px
+
+        
+
+      &-wrap
+        max-width: 290px
+        margin: 0 auto
