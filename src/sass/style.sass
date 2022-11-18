@@ -122,6 +122,12 @@ body
     max-width: 350px
     &-text 
       color: #A1A1A1
+      &.overflow
+        text-overflow: ellipsis
+        -webkit-line-clamp: 3
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        overflow: hidden
   &__card
     &:hover .ourservices__arrow
       fill: #FF4343
