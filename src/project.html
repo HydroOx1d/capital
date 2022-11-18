@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/head.html', {
+"title": 'Проекты'
+})
+
+<body class="vh-100">
+  <div class="wrapper d-flex flex-column h-100">
+    @@include('./html/header.html', {
+    "activeClassProjects": '_is-active'
+    })
+    <main class="main flex-grow-1 flex-shrink-0">
+      <div class="bg-dark d-flex flex-lg-row flex-column align-items-center">
+        <div class="d-flex justify-content-center align-items-center w-100">
+          <div class="project__info py-5 py-lg-0">
+            <div class="text-white mb-2">Проекты</div>
+            <h1 class="text-white mb-3 project__title">Avior Pharma</h1>
+            <button class="py-2 px-5 text-white border-0" style="background: #FF4343;">Задать вопрос<img src="./img/feedback/arrow-top-right.svg"
+                alt="arrow_top_right"></button>
+          </div>
+        </div>
+        <div class="position-relative w-100" style="padding: 0px 0px 57% 0px;">
+          <img src="./img/projects/bg.jpg" alt="building" class="position-absolute top-0 start-0 w-100 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-column-reverse flex-lg-row align-items-center py-5">
+
+            <div class="position-relative project__image me-3">
+              <img src="../../img/about/about-section.jpg" alt="building" class="position-absolute w-100 h-100 top-0 start-0" style="object-fit: cover;">
+            </div>
+
+            <div class="d-flex flex-column about-section__info mb-4 mb-lg-0">
+          
+              <div class="fs-2 mb-3">Цели реалицации проекта</div>
+              <div class="d-flex flex-column" style="max-width: 445px;">
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">1</div>
+                  <div>Создание в Калужской области современного высокотехнологичного предприятия по
+                  разработке и выпуску лекарственных препаратов.</div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">2</div>
+                  <div>Замещение доли импортных лекарственных средств препаратамотечественного
+                  производства по перечню жизненно необходимыхи важнейших лекарственных препаратов
+                  в соответствии со стандартами GMP.</div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">3</div>
+                  <div>Выход на рынок с широким ассортиментом востребованного и конкурентоспособного
+                  продукта (всего предполагается 70 наименований препаратов (без учета дозировок)),
+                  завоевание и удержание стабильной рыночной доли при помощи реализации
+                  конкурентных преимуществ Проекта.</div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">4</div>
+                  <div>Создание условий для дальнейшего развития отрасли, в т. ч. фармацевтического кластера в
+                  Калужской области, в рамках реализации федеральной целевой программы Министерства
+                  промышленности и торговли РФ - "Стратегия развития фармацевтической промышленности
+                  Российской Федерации на период до 2020 года".</div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">5</div>
+                  <div>Организация экспорта российской фармацевтической продукции в зарубежные страны.</div>
+                </div>
+                <div class="d-flex align-items-start mb-3">
+                  <div class="about-section__counter rounded-circle d-flex justify-content-center align-items-center me-2">6</div>
+                  <div>Развитие сотрудничества в рамках ЕАЭС</div>
+                </div>
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+      @@include('./html/home_sections/contacts.html')
+    </main>
+    @@include('./html/footer.html', {})
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
