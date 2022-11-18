@@ -5,7 +5,9 @@
 })
 <body class="vh-100">
   <div class="wrapper d-flex flex-column h-100">
-    @@include('./html/header.html', {})
+    @@include('./html/header.html', {
+      "activeClassFactoring": '_is-active'
+    })
     <main class="main flex-grow-1 flex-shrink-0">
       @@include('./html/factoring_sections/banner.html')
       @@include('./html/factoring_sections/financing.html')

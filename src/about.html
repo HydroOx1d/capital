@@ -5,12 +5,15 @@
 })
 <body class="vh-100">
   <div class="wrapper d-flex flex-column h-100">
-    @@include('./html/header.html', {})
+    @@include('./html/header.html', {
+      "activeClassAbout": '_is-active'
+    })
     <main class="main flex-grow-1 flex-shrink-0">
       @@include('./html/about_sections/banner.html', {})
       @@include('./html/about_sections/requisites.html', {})
       @@include('./html/home_sections/partners.html', {})
       @@include('./html/home_sections/contacts.html', {})
+      @@include('./html/home_sections/feedback.html', {})
     </main>
     @@include('./html/footer.html', {})
   </div>
