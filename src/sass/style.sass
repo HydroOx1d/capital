@@ -1,4 +1,5 @@
-@import './fonts.sass'
+
+@import fonts
   
 body 
   font-family: SfProDisplayRegular, sans-serif!important
@@ -40,6 +41,8 @@ body
       flex: 1
   &-btn-icon
     border-radius: 0 !important
+  &-btn
+    background: #FF4343
 
 
 .bankBills 
@@ -103,3 +106,76 @@ body
       line-height: 19px
       color: #141414
       max-width: 215px
+
+
+.header__logo-span 
+  color: #FF4343
+
+.header__nav-item
+  text-decoration: none
+  color: #141414
+  cursor: pointer
+  &._is-active 
+    color: #FF4343
+    border-bottom: 1px solid #FF4343
+
+.ourservices
+  &__head
+    max-width: 350px
+    &-text 
+      color: #A1A1A1
+  &__card
+    &:hover .ourservices__arrow
+      fill: #FF4343
+    &:hover .ourservices__card-title 
+      color: #FF4343
+    &-avatar
+      width: 140px
+      height: 140px
+    &-title
+      transition: color 150ms ease-in
+      color: #141414
+    &-text
+      max-width: 350px
+  &__arrow
+    fill: #141414
+    transition: fill 150ms ease-in
+
+
+.about-section
+  &__bg 
+    background-color: #141414
+  &__info
+    max-width: 610px
+  &__counter
+    min-width: 30px
+    min-height: 30px
+    background-color: #FF4343
+  &__image
+    padding-bottom: 54.39%
+    img
+      object-fit: cover
+
+.strategy
+  &__title
+    color: #FF4343
+  &__list
+    color: #a1a1a1
+  &__info
+    max-width: 600px
+
+.feedback
+  &__image
+    padding: 0px 0px 38.6% 0px
+    img
+      object-fit: cover
+  &__title
+    color: #FF4343
+  &__form
+    label
+      color: #A1A1A1
+    textarea 
+      resize: none
+      height: 130px
+    button 
+      background: #FF4343
