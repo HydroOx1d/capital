@@ -4,6 +4,9 @@
 body 
   font-family: SfProDisplayRegular, sans-serif!important
 
+.sf-pro-medium
+  font-family: SfProDisplayMedium, sans-serif!important
+
 .footer
   background: #141414
   &-logo
@@ -124,6 +127,12 @@ body
     max-width: 350px
     &-text 
       color: #A1A1A1
+      &.overflow
+        text-overflow: ellipsis
+        -webkit-line-clamp: 3
+        display: -webkit-box
+        -webkit-box-orient: vertical
+        overflow: hidden
   &__card
     &:hover .ourservices__arrow
       fill: #FF4343
@@ -140,6 +149,10 @@ body
   &__arrow
     fill: #141414
     transition: fill 150ms ease-in
+  &__all-services
+    min-height: 300px
+    @media (min-width: 576px)
+      min-height: auto
 
 
 .about-section
@@ -179,3 +192,18 @@ body
       height: 130px
     button 
       background: #FF4343
+
+.project
+  &__title
+    font-size: 32px
+    @media (min-width: 576px) 
+      font-size: 48px
+    @media (min-width: 767px)
+      font-size: 64px
+  &__image
+    width: 610px
+    padding: 0px 0px 55.3% 0px
+    @media (min-width: 992px) and (max-width: 1200px)
+      padding: 0 0 90% 0
+    @media (max-width: 992px)
+      width: 100%
