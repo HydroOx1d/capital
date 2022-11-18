@@ -1,7 +1,106 @@
+
 @import fonts
   
 body 
   font-family: SfProDisplayRegular, sans-serif!important
+
+.footer
+  background: #141414
+  &-logo
+    color: #FF4343
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 26px
+
+
+  
+.banner
+  &-content
+    flex: 1
+    width: 100%
+    background: #141414
+    display: flex
+    align-items: center
+    justify-content: center
+  &-title
+    font-style: normal
+    font-weight: 400
+    font-size: 64px
+    line-height: 76px
+  &-text
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #A2A2A2
+
+  &-img
+    object-fit: cover
+    &-wrap
+      flex: 1
+  &-btn-icon
+    border-radius: 0 !important
+
+
+.bankBills 
+  &-image
+    width: 100%
+    object-fit: cover
+
+    &-wrap
+      flex: 1
+    
+  &-content
+    flex: 1
+
+  &-item-text
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    max-width: 400px
+
+    @media (max-width: 500px) 
+      max-width: 200px
+
+.partners
+  &-slide
+    max-width: 160px
+  &-img
+    width: 100%
+    height: 100%
+    &-big
+      max-width: 60px
+      max-height: 80px
+    &-wrap
+      height: 50px
+      width: 110px
+
+.contacts
+  font-weight: 400
+  font-size: 34px
+  color: #141414
+  &-borders
+    border-top: 1px solid #F8F8F8
+    border-bottom: 1px solid #F8F8F8
+
+  &-item
+    max-width: 310px
+    width: 100%
+    min-height: 146px
+    border-right: 1px solid #F8F8F8
+    &:last-child
+      border-right: none
+    &-title
+      font-weight: 500
+      font-size: 18px
+
+    &-desc
+      font-size: 16px
+      line-height: 19px
+      color: #141414
+      max-width: 215px
 
 
 .header__logo-span 
