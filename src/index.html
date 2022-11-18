@@ -5,13 +5,18 @@
 })
 <body class="vh-100">
   <div class="wrapper d-flex flex-column h-100">
-    @@include('./html/header.html', {})
-    <a href="./about.html">dasdas</a>
+    @@include('./html/header.html', {
+      "activeClassHome": '_is-active'
+    })
     <main class="main flex-grow-1 flex-shrink-0">
       @@include('./html/home_sections/banner.html')
+      @@include('./html/home_sections/ourservices.html', {})
       @@include('./html/home_sections/bankBills.html')
+      @@include('./html/home_sections/about.html', {})
       @@include('./html/home_sections/partners.html')
+      @@include('./html/home_sections/strategy.html', {})
       @@include('./html/home_sections/contacts.html')
+      @@include('./html/home_sections/feedback.html', {})
     </main>
     @@include('./html/footer.html', {})
   </div>
