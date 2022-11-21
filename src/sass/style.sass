@@ -21,19 +21,17 @@ body
 .banner
   position: relative
   &-content
-    flex: 1
     width: 100%
     background: #141414
+    @media (max-width: 992px) 
+      height: 415px
   
   &-info
-    @media (max-width: 991px)
-      max-width: 720px
-      margin: 0 auto
-    
-    // @media (min-width: 576px)
-    //   max-width: 540px
-    //   margin: 0 auto
-  
+    flex: 1
+    margin: 200px 0
+    @media (max-width: 992px) 
+      margin: 50px 0
+
   &-title
     font-style: normal
     font-weight: 400
@@ -56,7 +54,7 @@ body
       flex: 1
 
       @media (max-width: 991px)
-        height: 500px
+        display: none
 
   &-btn-icon
     border-radius: 0 !important
