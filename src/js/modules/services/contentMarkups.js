@@ -1,6 +1,6 @@
 const markup1 = `<div class="d-flex flex-column">
                   <div class="d-flex flex-column mb-4">
-                    <div class="mb-2" style="color: #a2a2a2;">Продажа вашего бизнеса</div>
+                    <div class="mb-2 text-dark">Продажа вашего бизнеса</div>
                     <h1 class="fs-1" style="color: #FF4343;">Как мы будем предоставлять вам максимальную выгоду</h1>
                   </div>
                   <div class="d-flex flex-column mb-5" style="max-width: 620px;">
@@ -72,7 +72,7 @@ const markup1 = `<div class="d-flex flex-column">
           
 const markup2 = `<div class="d-flex flex-column">
                   <div class="d-flex flex-column mb-4">
-                    <div class="mb-2" style="color: #a2a2a2;">Привлечение вашего капитала</div>
+                    <div class="mb-2 text-dark">Привлечение вашего капитала</div>
                     <h1 class="fs-1" style="color: #FF4343;">Исключительный доступ к финансированию мирового уровня</h1>
                   </div>
                   <div class="d-flex flex-column mb-5" style="max-width: 620px;">
@@ -125,7 +125,7 @@ const markup2 = `<div class="d-flex flex-column">
 
 const markup3 = `<div class="d-flex flex-column">
                   <div class="d-flex flex-column mb-4">
-                    <div class="mb-2" style="color: #a2a2a2;">Слияние и поглощение</div>
+                    <div class="mb-2 text-dark">Слияние и поглощение</div>
                     <h1 class="fs-1" style="color: #FF4343;">Как мы помогаем вам расти благодаря приобретению</h1>
                   </div>
                   <div class="d-flex flex-column mb-5" style="max-width: 620px;">
@@ -188,7 +188,7 @@ const markup6 = `
 const markup7 = `
 <div class="d-flex flex-column">
                   <div class="d-flex flex-column mb-4">
-                    <div class="mb-2" style="color: #a2a2a2;">Операции с драг металлами</div>
+                    <div class="mb-2 text-dark">Операции с драг металлами</div>
                   </div>
                   <div class="d-flex flex-column mb-5" style="max-width: 620px;">
                     <p class="text-dark mb-3">Покупку или продажу драгоценных металлов необходимо проводить только у надежного партнера. Контрольные органы строго
