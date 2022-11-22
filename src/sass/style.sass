@@ -21,19 +21,17 @@ body
 .banner
   position: relative
   &-content
-    flex: 1
     width: 100%
     background: #141414
+    @media (max-width: 992px) 
+      height: 415px
   
   &-info
-    @media (max-width: 991px)
-      max-width: 720px
-      margin: 0 auto
-    
-    // @media (min-width: 576px)
-    //   max-width: 540px
-    //   margin: 0 auto
-  
+    flex: 1
+    margin: 200px 0
+    @media (max-width: 992px) 
+      margin: 50px 0
+
   &-title
     font-style: normal
     font-weight: 400
@@ -56,7 +54,7 @@ body
       flex: 1
 
       @media (max-width: 991px)
-        height: 500px
+        display: none
 
   &-btn-icon
     border-radius: 0 !important
@@ -121,7 +119,8 @@ body
     border-bottom: 1px solid #F8F8F8
   &-map
     // filter: grayscale(90%)
-
+  &-title
+    text-align: center
   &-item
     max-width: 310px
     width: 100%
@@ -214,8 +213,6 @@ body
   &__title
     color: #FF4343
   &__form
-    label
-      color: #A1A1A1
     textarea 
       resize: none
       height: 130px
@@ -238,6 +235,7 @@ body
       color: #A2A2A2
   
 .financing
+  margin-bottom: 100px
 
   &-list
     list-style: none
