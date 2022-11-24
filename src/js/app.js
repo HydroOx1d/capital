@@ -11,4 +11,6 @@ try {
 
 const servicePage = new Service()
 servicePage.render()
-servicePage.$serviceArrowBack.onclick = () => servicePage.closeContentMenu()
+if(servicePage.$serviceArrowBack !== null) {
+  servicePage.$serviceArrowBack.onclick = () => servicePage.closeContentMenu()
+}
