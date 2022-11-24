@@ -1,18 +1,22 @@
 import { markups } from "./services/contentMarkups.js"
 
-export default function servicesPage() {
-  const param = location.search
-  const paramId = param.slice(-1)
-  const servicesContent = document?.querySelector('.services__content')
-  const servicesSidebar = document?.querySelector('.services__sidebar')
-  const servicesArrowBack = document?.querySelector('.services__arrow-back')
-
-  servicesArrowBack.onclick  = () => {
-    servicesContent.style.display = 'none'
-    servicesContent.classList.remove('_is-active')
-    servicesSidebar.classList.remove('_is-disable',)
-    servicesArrowBack.classList.add('d-none')
+export class Service {
+  constructor() {
+    this.paramId = location.search.slice(-1)
+    this.$serviceContent = document?.querySelector('.services__content')
+    this.$serviceSidebar = document?.querySelector('.services__sidebar')
+    this.$serviceArrowBack = document?.querySelector('.services__arrow-back')
   }
 
-  servicesContent.innerHTML = markups[Number(paramId) - 1]
+  closeContentMenu() {
+    this.$serviceContent.style.display = 'none'
+    this.$serviceContent.classList.remove('_is-active')
+    this.$serviceSidebar.classList.remove('_is-disable',)
+    this.$serviceArrowBack.classList.add('d-none')
+  }
+
+  render() {
+    if(!this.$serviceContent) return;
+    this.$serviceContent.innerHTML = markups[Number(this.paramId) - 1]
+  }
 }
